@@ -1,0 +1,49 @@
+@RELATION bikes
+
+@ATTRIBUTE nr NUMERIC
+@ATTRIBUTE front-gears NUMERIC  
+@ATTRIBUTE rear-gears NUMERIC  
+@ATTRIBUTE gears-type {inner, outer, none}  
+@ATTRIBUTE frame-size NUMERIC  
+@ATTRIBUTE tyre-size NUMERIC  
+@ATTRIBUTE saddle {sport, city, mixed}
+@ATTRIBUTE front-breaks {v-break, disk, none}   
+@ATTRIBUTE rear-breaks {v-break, disk, none, hub}  
+@ATTRIBUTE fork {suspension, solid}
+@ATTRIBUTE class {fixed-gear, city, mtb, road, trekking}
+
+
+@DATA
+1,1,3,inner,48,28,city,v-break,v-break,solid,city
+2,1,4,inner,52,28,city,v-break,hub,suspension,city
+3,1,6,inner,54,28,city,v-break,hub,solid,city
+4,1,3,inner,51,28,city,v-break,v-break,suspension,city
+5,1,4,inner,48,28,city,v-break,hub,suspension,city
+6,1,5,inner,50,28,city,v-break,hub,solid,city
+7,3,9,outer,56,28,mixed,v-break,v-break,suspension,trekking
+8,3,9,outer,52,28,mixed,v-break,v-break,solid,trekking
+9,3,9,outer,62,28,mixed,v-break,v-break,suspension,trekking
+10,3,9,outer,48,28,mixed,v-break,v-break,solid,trekking
+11,3,9,outer,54,28,mixed,v-break,v-break,suspension,trekking
+12,3,9,outer,58,28,mixed,v-break,v-break,solid,trekking
+13,1,1,none,48,28,sport,none,hub,solid,fixed-gear
+14,1,1,none,54,28,sport,v-break,hub,solid,fixed-gear
+15,1,1,none,58,28,sport,none,hub,solid,fixed-gear
+16,1,1,none,61,28,sport,v-break,hub,solid,fixed-gear
+17,1,1,none,58,28,sport,none,hub,solid,fixed-gear
+18,3,10,outer,54,28,sport,v-break,v-break,solid,road
+19,3,11,outer,48,28,sport,v-break,v-break,solid,road
+20,2,10,outer,56,28,sport,v-break,v-break,solid,road
+21,3,9,outer,56,28,sport,v-break,v-break,solid,road
+22,2,10,outer,53,28,sport,v-break,v-break,solid,road
+23,2,9,outer,50,28,sport,v-break,v-break,solid,road
+24,3,10,outer,48,29,sport,disk,disk,suspension,mtb
+25,3,9,outer,61,26,sport,v-break,v-break,suspension,mtb
+26,3,11,outer,52,26,sport,disk,disk,suspension,mtb
+27,3,10,outer,57,26,sport,disk,v-break,suspension,mtb
+28,3,9,outer,48,29,sport,disk,disk,suspension,mtb
+29,3,10,outer,53,26,sport,disk,disk,suspension,mtb
+30,3,9,outer,63,29,sport,v-break,v-break,suspension,mtb
+%
+%
+%
